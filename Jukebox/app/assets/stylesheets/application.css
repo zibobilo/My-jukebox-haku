@@ -13,3 +13,226 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  /* border: 1px solid red; */
+  }
+  
+  ::selection {
+      background: rgba(255, 255, 255, 0);
+  }
+  
+  body  {
+    font-family : Roboto;
+    text-transform: uppercase;
+  }
+  
+  /* Section 1 */
+  /* Album Carousel */
+  
+  /* --------------  CSS ARROWS ------------*/
+  .album-arrows {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 20% 0 0 0;
+  }
+  
+  #box-arrow1:hover, #box-arrow2:hover {
+    background-color: #0085B2;
+    border-color: transparent;
+  }
+  
+  #box-arrow1:hover .arrow:before,  #box-arrow2:hover .arrow:before {
+    background-color: white;
+  }
+  
+  #box-arrow1:hover .arrow:after,  #box-arrow2:hover .arrow:after {
+    border-left-color: white;
+  }
+  
+  #box-arrow1:active, #box-arrow2:active {
+    background-color: #00698C;
+  }
+  
+  .arrow:before, .arrow:after  {
+    content: '';
+    font-size: 0px;
+    border-color: transparent;
+    border-style: solid;
+  }
+  
+  .arrow:before {
+    background-color: #DDDDDD;
+    border-width: 0.25vw 0 0.25vw 0.7vw;
+  }
+  
+  .arrow:after {
+    border-width: 0.6vw 0 0.6vw 0.8vw;
+    border-left-color: #DDDDDD;
+  }
+  
+  /* LEFT ARROW */
+  #box-arrow1 {
+    padding: 1vw 1.5vw 1.8vw 1.5vw;
+    position: inherit;
+    left: 0;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5vw;
+    transform: rotate(180deg);
+    transition : 0.2s;
+  }
+  
+  /* RIGHT ARROW */
+  #box-arrow2 {
+    padding: 1vw 1.5vw 1.8vw 1.5vw;
+    position: inherit;
+    right: 0;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5vw;
+    transition : 0.2s;
+  }
+  
+  /* ---------------  CARDS ----------------*/
+  
+  #cards img {
+    width: 80%;
+  }
+  
+  #cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw 0 0 0;
+    
+  }
+  
+  .card {
+    width: 30vw;
+    height: 22vw;
+    padding : 30px 2vw;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
+    transition : 0.2s;
+  }
+  
+  .card:hover {
+    background-color: #0085B2;
+  }
+  
+  .card:hover .text-album, .card:hover {
+    color: white;
+  }
+  
+  #card1 {
+    margin: 0 -4vw 0 10vw;
+    z-index: 0;
+  }
+  
+  #card2 {
+    margin: 30px -4vw 0 -4vw ;
+    z-index: 1;
+  }
+  
+  #card3 {
+    margin: 60px -4vw 0 -4vw ;
+    z-index: 2;
+  }
+  
+  #card4 {
+    margin: 30px -4vw 0 -4vw;
+    z-index: 1;
+  }
+  
+  #card5 {
+    margin: 0 10vw 0 -4vw;
+    z-index: 0;
+  }
+  
+  .text-album {
+    font-size: 1.7vw;
+    color: #00698C;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .artist-name {
+    font-size: 1.2vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .margin-auto {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30%;
+    margin: auto 0;
+  }
+  
+  /* Section 2 */
+  /* list of tracks */
+  #album-tracks {
+    width: 50vw;
+    margin: auto;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    background-color: #f3f6f7;
+  }
+  .track-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  tbody, tr {
+    width: 100%;
+    display: block;
+    border: 0.5px solid #DDDDDD;
+  }
+  
+  td {
+    padding: 0.5vw;
+  }
+  
+  .track-num {
+    
+  }
+  .star-icon-grey {
+    font-size: 2vw;
+    color: #DDDDDD;
+  }
+  .star-icon-gold {
+    font-size: 2vw;
+    color: #D9D900;
+  }
+  
+  .arrow-box {
+    cursor: pointer;
+  }
+  
+  .track-title-font {
+    color: #00698C;
+    font-size: 1.2vw;
+    font-weight: bold;
+  }
+  
+  .explicit {
+    
+  }
+  
+  .last-item {
+    margin: auto;
+  }
+  
+  /* colors #0085B2 Medium Blue
+            #00698C Dark Blue
+            #DDDDDD Grey
+            #D9D900 Yellow
+            #90B9C9 Light Blue
+            #f3f6f7 light grey blue
+  */
+  
+  /* text-overflow: ellipsis; */
