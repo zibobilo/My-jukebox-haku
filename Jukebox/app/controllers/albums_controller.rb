@@ -1,5 +1,5 @@
 class AlbumsController < ApplicationController
-  def index
+  def welcome
     @message = "hello there!"
   end
 end
