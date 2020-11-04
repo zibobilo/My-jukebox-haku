@@ -2,4 +2,4 @@
 Based on UXUI design below
 Check out the deployed app https://haku-jukebox-challenge.herokuapp.com/albums/welcome
 
-![](https://www.raphburk.com/haku-uxui-meterial/)
+![](https://www.raphburk.com/wp-content/uploads/2020/09/haku-uxui-meterial.png)
